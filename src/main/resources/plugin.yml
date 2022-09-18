@@ -1,0 +1,18 @@
+name: AdvancedFurnace
+version: 1.1.4
+main: fr.gohansword.advancedfurnace.AdvancedFurnace
+api-version: 1.16
+authors: [ Fiiionaa, GohanSword ]
+description: A simple plugin to cook your minerals
+website: SurvivalWorld.fr
+softdepend: [Jobs]
+commands:
+  smelt:
+    description: smelts the item in your hand
+    aliases: [four, furnace]
+  advancedfurnace:
+    description: admin commands
+    aliases: [af]
+  smeltall:
+    description: smelts the item in your hand
+    aliases: [fourall, furnaceall]

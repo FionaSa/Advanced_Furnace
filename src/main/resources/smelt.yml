@@ -1,0 +1,363 @@
+smeltable:
+  '1':
+    from: PORKCHOP
+    to: COOKED_PORKSHOP
+  '2':
+    from: BEEF
+    to: COOKED_BEEF
+  '3':
+    from: COD
+    to: COOKED_COD
+  '4':
+    from: SALMON
+    to: COOKED_SALMON
+  '5':
+    from: SANDSTONE
+    to: SMOOTH_SANDSTONE
+  '6':
+    from: RED_SANDSTONE
+    to: SMOOTH_RED_SANDSTONE
+  '7':
+    from: POTATO
+    to: BAKED_POTATO
+  '8':
+    from: MUTTON
+    to: COOKED_MUTTON
+  '9':
+    from: KELP
+    to: DRIED_KELP
+  '10':
+    from: IRON_ORE
+    to: IRON_INGOT
+  '11':
+    from: DEEPSLATE_IRON_ORE
+    to: IRON_INGOT
+  '12':
+    from: RAW_IRON
+    to: IRON_INGOT
+  '13':
+    from: GOLD_ORE
+    to: GOLD_INGOT
+  '14':
+    from: DEEPSLATE_GOLD_ORE
+    to: GOLD_INGOT
+  '15':
+    from: RAW_GOLD
+    to: GOLD_INGOT
+  '16':
+    from: COPPER_ORE
+    to: COPPER_INGOT
+  '17':
+    from: DEEPSLATE_COPPER_ORE
+    to: COPPER_INGOT
+  '18':
+    from: RAW_COPPER
+    to: COPPER_INGOT
+  '19':
+    from: SAND
+    to: GLASS
+  '20':
+    from: RED_SAND
+    to: GLASS
+  '21':
+    from: COBBLESTONE
+    to: STONE
+  '22':
+    from: CLAY_BALL
+    to: BRICK
+  '23':
+    from: NETHERRACK
+    to: NETHER_BRICK
+  '24':
+    from: CLAY
+    to: TERRACOTTA
+  '25':
+    from: STONE_BRICKS
+    to: CRACKED_STONE_BRICKS
+  '26':
+    from: BLACK_TERRACOTTA
+    to: BLACK_GLAZED_TERRACOTTA
+  '27':
+    from: BLUE_TERRACOTTA
+    to: BLUE_GLAZED_TERRACOTTA
+  '28':
+    from: BROWN_TERRACOTTA
+    to: BROWN_GLAZED_TERRACOTTA
+  '29':
+    from: CYAN_TERRACOTTA
+    to: CYAN_GLAZED_TERRACOTTA
+  '30':
+    from: GRAY_TERRACOTTA
+    to: GRAY_GLAZED_TERRACOTTA
+  '31':
+    from: GREEN_TERRACOTTA
+    to: GREEN_GLAZED_TERRACOTTA
+  '32':
+    from: LIGHT_BLUE_TERRACOTTA
+    to: LIGHT_BLUE_GLAZED_TERRACOTTA
+  '33':
+    from: LIGHT_GRAY_TERRACOTTA
+    to: LIGHT_GRAY_GLAZED_TERRACOTTA
+  '34':
+    from: LIME_TERRACOTTA
+    to: LIME_GLAZED_TERRACOTTA
+  '35':
+    from: MAGENTA_TERRACOTTA
+    to: MAGENTA_GLAZED_TERRACOTTA
+  '36':
+    from: ORANGE_TERRACOTTA
+    to: ORANGE_GLAZED_TERRACOTTA
+  '37':
+    from: PINK_TERRACOTTA
+    to: PINK_GLAZED_TERRACOTTA
+  '38':
+    from: PURPLE_TERRACOTTA
+    to: PURPLE_GLAZED_TERRACOTTA
+  '39':
+    from: RED_TERRACOTTA
+    to: RED_GLAZED_TERRACOTTA
+  '40':
+    from: WHITE_TERRACOTTA
+    to: WHITE_GLAZED_TERRACOTTA
+  '41':
+    from: YELLOW_TERRACOTTA
+    to: YELLOW_GLAZED_TERRACOTTA
+  '42':
+    from: DIAMOND_ORE
+    to: DIAMOND
+  '43':
+    from: DEEPSLATE_DIAMOND_ORE
+    to: DIAMOND
+  '44':
+    from: LAPIS_ORE
+    to: LAPIS_LAZULI
+  '45':
+    from: DEEPSLATE_LAPIS_ORE
+    to: LAPIS_LAZULI
+  '46':
+    from: REDSTONE_ORE
+    to: REDSTONE
+  '47':
+    from: DEEPSLATE_REDSTONE_ORE
+    to: REDSTONE
+  '48':
+    from: COAL_ORE
+    to: COAL
+  '49':
+    from: DEEPSLATE_COAL_ORE
+    to: COAL
+  '50':
+    from: EMERALD_ORE
+    to: EMERALD
+  '51':
+    from: DEEPSLATE_EMERALD_ORE
+    to: EMERALD
+  '52':
+    from: NETHER_QUARTZ_ORE
+    to: QUARTZ
+  '53':
+    from: IRON_SWORD
+    to: IRON_NUGGET
+  '54':
+    from: IRON_PICKAXE
+    to: IRON_NUGGET
+  '55':
+    from: IRON_AXE
+    to: IRON_NUGGET
+  '56':
+    from: IRON_SHOVEL
+    to: IRON_NUGGET
+  '57':
+    from: IRON_HOE
+    to: IRON_NUGGET
+  '58':
+    from: CHAINMAIL_HELMET
+    to: IRON_NUGGET
+  '59':
+    from: CHAINMAIL_CHESTPLATE
+    to: IRON_NUGGET
+  '60':
+    from: CHAINMAIL_LEGGINGS
+    to: IRON_NUGGET
+  '61':
+    from: CHAINMAIL_BOOTS
+    to: IRON_NUGGET
+  '62':
+    from: IRON_HELMET
+    to: IRON_NUGGET
+  '63':
+    from: IRON_CHESTPLATE
+    to: IRON_NUGGET
+  '64':
+    from: IRON_LEGGINGS
+    to: IRON_NUGGET
+  '65':
+    from: IRON_BOOTS
+    to: IRON_NUGGET
+  '66':
+    from: IRON_HORSE_ARMOR
+    to: IRON_NUGGET
+  '67':
+    from: GOLDEN_SWORD
+    to: GOLD_NUGGET
+  '68':
+    from: GOLDEN_AXE
+    to: GOLD_NUGGET
+  '69':
+    from: GOLDEN_PICKAXE
+    to: GOLD_NUGGET
+  '70':
+    from: GOLDEN_SHOVEL
+    to: GOLD_NUGGET
+  '71':
+    from: GOLDEN_HOE
+    to: GOLD_NUGGET
+  '72':
+    from: GOLDEN_HELMET
+    to: GOLD_NUGGET
+  '73':
+    from: GOLDEN_CHESTPLATE
+    to: GOLD_NUGGET
+  '74':
+    from: GOLDEN_LEGGINGS
+    to: GOLD_NUGGET
+  '75':
+    from: GOLDEN_BOOTS
+    to: GOLD_NUGGET
+  '76':
+    from: GOLDEN_HORSE_ARMOR
+    to: GOLD_NUGGET
+  '77':
+    from: CACTUS
+    to: GREEN_DYE
+  '78':
+    from: BIRCH_LOG
+    to: CHARCOAL
+  '79':
+    from: SPRUCE_LOG
+    to: CHARCOAL
+  '80':
+    from: OAK_LOG
+    to: CHARCOAL
+  '81':
+    from: JUNGLE_LOG
+    to: CHARCOAL
+  '82':
+    from: ACACIA_LOG
+    to: CHARCOAL
+  '83':
+    from: DARK_OAK_LOG
+    to: CHARCOAL
+  '84':
+    from: STRIPPED_ACACIA_LOG
+    to: CHARCOAL
+  '85':
+    from: STRIPPED_ACACIA_WOOD
+    to: CHARCOAL
+  '86':
+    from: STRIPPED_BIRCH_LOG
+    to: CHARCOAL
+  '87':
+    from: STRIPPED_BIRCH_WOOD
+    to: CHARCOAL
+  '88':
+    from: STRIPPED_DARK_OAK_LOG
+    to: CHARCOAL
+  '89':
+    from: STRIPPED_DARK_OAK_WOOD
+    to: CHARCOAL
+  '90':
+    from: STRIPPED_JUNGLE_LOG
+    to: CHARCOAL
+  '91':
+    from: STRIPPED_JUNGLE_WOOD
+    to: CHARCOAL
+  '92':
+    from: STRIPPED_OAK_LOG
+    to: CHARCOAL
+  '93':
+    from: STRIPPED_OAK_WOOD
+    to: CHARCOAL
+  '94':
+    from: STRIPPED_SPRUCE_LOG
+    to: CHARCOAL
+  '95':
+    from: STRIPPED_SPRUCE_WOOD
+    to: CHARCOAL
+  '96':
+    from: ACACIA_WOOD
+    to: CHARCOAL
+  '97':
+    from: DARK_OAK_WOOD
+    to: CHARCOAL
+  '98':
+    from: OAK_WOOD
+    to: CHARCOAL
+  '99':
+    from: BIRCH_WOOD
+    to: CHARCOAL
+  '100':
+    from: SPRUCE_WOOD
+    to: CHARCOAL
+  '101':
+    from: JUNGLE_WOOD
+    to: CHARCOAL
+  '102':
+    from: CRIMSON_STEM
+    to: CHARCOAL
+  '103':
+    from: WARPED_STEM
+    to: CHARCOAL
+  '104':
+    from: STRIPPED_CRIMSON_STEM
+    to: CHARCOAL
+  '105':
+    from: STRIPPED_WARPED_STEM
+    to: CHARCOAL
+  '106':
+    from: STRIPPED_CRIMSON_HYPHAE
+    to: CHARCOAL
+  '107':
+    from: STRIPPED_WARPED_HYPHAE
+    to: CHARCOAL
+  '108':
+    from: CHORUS_FRUIT
+    to: POPPED_CHORUS_FRUIT
+  '109':
+    from: WET_SPONGE
+    to: SPONGE
+  '110':
+    from: NETHER_GOLD_ORE
+    to: GOLD_INGOT
+  '111':
+    from: DEEPSLATE_TILES
+    to: CRACKED_DEEPSLATE_TILES
+  '112':
+    from: COBBLED_DEEPSLATE
+    to: DEEPSLATE
+  '113':
+    from: POLISHED_BLACKSTONE_BRICKS
+    to: CRACKED_POLISHED_BLACKSTONE_BRICKS
+  '114':
+    from: SEA_PICKLE
+    to: LIME_DYE
+  '115':
+    from: STONE
+    to: SMOOTH_STONE
+  '116':
+    from: QUARTZ_BLOCK
+    to: SMOOTH_QUARTZ
+  '117':
+    from: NETHER_BRICKS
+    to: CRACKED_NETHER_BRICKS
+  '118':
+    from: ANCIENT_DEBRIS
+    to: NETHERITE_SCRAP
+  '119':
+    from: RABBIT
+    to: COOKED_RABBIT
+  '120':
+    from: BASALT
+    to: SMOOTH_BASALT
+
+
