@@ -1,6 +1,8 @@
 NoPermission: "&c불충분 한 권한."
 UnsmeltableItem: "&b제련하려면 유효한 아이템을 사용하십시오."
 SuccessfulSmelt: "&b손에서 성공적으로 제련 된 아이템."
+SuccessSmeltAll: "&b{N} 개체가 성공적으로 요리되었습니다."
+UnsmeltableItemAll: "&b제련 가능한 항목을 사용하십시오."
 Reload: "&b구성이 성공적으로 다시로드되었습니다.."
 Prefix: "&8&l[&b&lAdvanced&f&lFurnace&8&l] &8>> &r"
 Help: "&b&m-----&r&f&m-----&r&8[&b&lAdvanced&f&lFurnace&8]&f&m-----&r&b&m-----&r"

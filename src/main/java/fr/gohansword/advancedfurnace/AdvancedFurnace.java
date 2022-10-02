@@ -47,7 +47,7 @@ public final class AdvancedFurnace extends JavaPlugin {
         String blankline = "&c";
         Player player = (Player)sender;
 
-        if (label.equalsIgnoreCase("advancedfurnace")) {
+        if (label.equalsIgnoreCase("advancedfurnace") ||label.equalsIgnoreCase("af") ) {
             if (args.length == 0) {
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&',
                         language.getLanguageConfig().getString("Prefix") + language.getLanguageConfig().getString("Usage")));
@@ -82,42 +82,6 @@ public final class AdvancedFurnace extends JavaPlugin {
                 } else if (args[0].equalsIgnoreCase("help")) {
                     sender.sendMessage(ChatColor.translateAlternateColorCodes('&',
                             language.getLanguageConfig().getString("Help") + newLine + blankline + newLine + language.getLanguageConfig().getString("CommandHelp") + newLine + language.getLanguageConfig().getString("CommandReload") + newLine + language.getLanguageConfig().getString("CommandSmelt") + newLine + blankline + newLine + language.getLanguageConfig().getString("HelpEnd")));
-                }
-            }
-        } else if (label.equalsIgnoreCase("af")) {
-            if (args.length == 0) {
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                        language.getLanguageConfig().getString("Prefix") + language.getLanguageConfig().getString("Usage")));
-                player.playNote(player.getLocation(), Instrument.CHIME, Note.natural(1, Note.Tone.A));
-                player.sendTitle(ChatColor.translateAlternateColorCodes('&',
-                        this.getConfig().getString("MainName")), ChatColor.translateAlternateColorCodes('&',
-                        language.getLanguageConfig().getString("Usage")));
-            }
-            else if (args.length > 0) {
-                if (args[0].equalsIgnoreCase("reload")) {
-                    if (!sender.hasPermission("advancedfurnace.admin")) {
-                        sender.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                                language.getLanguageConfig().getString("Prefix") + language.getLanguageConfig().getString("NoPermission")));
-                        player.playSound(player.getLocation(), Sound.BLOCK_ANVIL_DESTROY, 0.1F, 1);
-                        player.sendTitle(ChatColor.translateAlternateColorCodes('&',
-                                this.getConfig().getString("MainName")), ChatColor.translateAlternateColorCodes('&',
-                                language.getLanguageConfig().getString("NoPermission")));
-                        return true;
-                    }else
-                         this.saveDefaultConfig();
-                         this.reloadConfig();
-                         language.createlanguageConfig();
-                    player.playNote(player.getLocation(), Instrument.CHIME, Note.natural(1, Note.Tone.A));
-                    player.sendTitle(ChatColor.translateAlternateColorCodes('&',
-                            this.getConfig().getString("MainName")), ChatColor.translateAlternateColorCodes('&',
-                            language.getLanguageConfig().getString("Reload")));
-                    sender.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                            language.getLanguageConfig().getString("Prefix") + language.getLanguageConfig().getString("Reload")));
-                    Bukkit.getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&',
-                            language.getLanguageConfig().getString("Prefix") + language.getLanguageConfig().getString("Reload")));
-                }else if (args[0].equalsIgnoreCase("help")) {
-                    sender.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                            language.getLanguageConfig().getString("Help" ) + newLine + blankline + newLine + language.getLanguageConfig().getString("CommandHelp") + newLine + language.getLanguageConfig().getString("CommandReload") + newLine + language.getLanguageConfig().getString("CommandSmelt") + newLine + blankline + newLine + language.getLanguageConfig().getString("HelpEnd")));
                 }
             }
         } return false;

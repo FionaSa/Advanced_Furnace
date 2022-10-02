@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fr.gohansword</groupId>
-    <artifactId>AdvencedFurnace</artifactId>
-    <version>1.1.4</version>
+    <artifactId>AdvancedFurnace</artifactId>
+    <version>1.2</version>
     <packaging>jar</packaging>
 
-    <name>AdvencedFurnace</name>
+    <name>AdvancedFurnace</name>
 
     <description>A simple plugin to cook your minerals</description>
     <properties>

@@ -1,6 +1,8 @@
 NoPermission: "&cYetersiz izin."
 UnsmeltableItem: "&bLütfen koklamak için geçerli bir madde kullanın."
 SuccessfulSmelt: "&bElinizden başarıyla eritilmiş ürün (ler)."
+SuccessfulSmeltAll: "&b{N} öğe(ler) başarıyla pişirildi."
+UnsmeltableItemAll: "&bLütfen pişirilebilir öğeler kullanın."
 Reload: "&bYapılandırma başarıyla yeniden yüklendi."
 Prefix: "&8&l[&b&lAdvanced&f&lFurnace&8&l] &8>> &r"
 Help: "&b&m-----&r&f&m-----&r&8[&b&lAdvanced&f&lFurnace&8]&f&m-----&r&b&m-----&r"

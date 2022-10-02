@@ -1,7 +1,7 @@
 smeltable:
   '1':
     from: PORKCHOP
-    to: COOKED_PORKSHOP
+    to: COOKED_PORKCHOP
   '2':
     from: BEEF
     to: COOKED_BEEF
@@ -359,5 +359,7 @@ smeltable:
   '120':
     from: BASALT
     to: SMOOTH_BASALT
-
+  '121':
+    from: CHICKEN
+    to: COOKED_CHICKEN
 

@@ -28,20 +28,31 @@ public class Commandsmeltall implements CommandExecutor {
                 player.sendTitle(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("MainName")), ChatColor.translateAlternateColorCodes('&', AdvancedFurnace.language.getLanguageConfig().getString("UnsmeltableItem")));
                 return true;
             }
+            int count = 0;
             for (ItemStack itemStack : player.getInventory().getContents()) {
                 if (itemStack != null && itemStack.getType() != Material.AIR)
                     if (Utils.isValidMaterial(itemStack)) {
                         ItemStack smelted = Utils.getSmeltedItemStack(itemStack);
                         if (smelted != null) {
+                            count++;
                             itemStack.setAmount(smelted.getAmount());
                             itemStack.setItemMeta(smelted.getItemMeta());
                             itemStack.setType(smelted.getType());
                             itemStack.setData(itemStack.getData());
-                            player.sendMessage(ChatColor.translateAlternateColorCodes('&', AdvancedFurnace.language.getLanguageConfig().getString("Prefix")) + ChatColor.translateAlternateColorCodes('&', AdvancedFurnace.language.getLanguageConfig().getString("SuccessfulSmelt")));
-                            player.playNote(player.getLocation(), Instrument.CHIME, Note.natural(1, Note.Tone.A));
-                            player.sendTitle(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("MainName")), ChatColor.translateAlternateColorCodes('&', AdvancedFurnace.language.getLanguageConfig().getString("SuccessfulSmelt")));
-                        }
                     }
+                    }
+            }
+            if(count == 0) {
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', AdvancedFurnace.language.getLanguageConfig().getString("Prefix")) + ChatColor.translateAlternateColorCodes('&', AdvancedFurnace.language.getLanguageConfig().getString("UnsmeltableItemAll")));
+                player.playNote(player.getLocation(), Instrument.CHIME, Note.natural(1, Note.Tone.A));
+                player.sendTitle(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("MainName")), ChatColor.translateAlternateColorCodes('&', AdvancedFurnace.language.getLanguageConfig().getString("UnsmeltableItemAll")));
+            }
+            else
+            {
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', AdvancedFurnace.language.getLanguageConfig().getString("Prefix")) + ChatColor.translateAlternateColorCodes('&', AdvancedFurnace.language.getLanguageConfig().getString("SuccessfulSmeltAll").replace("{N}",String.valueOf(count))));
+                player.playNote(player.getLocation(), Instrument.CHIME, Note.natural(1, Note.Tone.A));
+                player.sendTitle(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("MainName")), ChatColor.translateAlternateColorCodes('&', AdvancedFurnace.language.getLanguageConfig().getString("SuccessfulSmeltAll").replace("{N}",String.valueOf(count))));
+
             }
 
         } else if(!player.hasPermission("advancedfurnace.use")) {

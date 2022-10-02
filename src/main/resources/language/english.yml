@@ -1,6 +1,8 @@
 NoPermission: "&cInsufficient permission."
 UnsmeltableItem: "&bPlease use a valid item to smelt."
 SuccessfulSmelt: "&bSuccessfully smelted item(s) from your hand."
+SuccessfulSmeltAll: "&b{N} item(s) cooked successfully."
+UnsmeltableItemAll: "&bPlease use cookable items."
 Reload: "&bConfiguration reloaded successfully."
 Prefix: "&8&l[&b&lAdvanced&f&lFurnace&8&l] &8>> &r"
 Help: "&b&m-----&r&f&m-----&r&8[&b&lAdvanced&f&lFurnace&8]&f&m-----&r&b&m-----&r"

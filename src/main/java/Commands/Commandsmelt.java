@@ -5,8 +5,14 @@ import org.bukkit.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.configuration.ConfigurationSection;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+
+import java.io.File;
+import java.util.Set;
 
 public class Commandsmelt
         implements CommandExecutor {
@@ -24,25 +30,28 @@ public class Commandsmelt
         int amount = is.getAmount();
         Material newItem = null;
         if (player.hasPermission("advancedfurnace.use")) {
+            ConfigurationSection sec = AdvancedFurnace.smelt.getsmeltConfig().getConfigurationSection("smeltable");
+            Set<String> Keys = sec.getKeys(false);
 
-            if (AdvancedFurnace.smelt.map.get(item) != null)
-            {
-                newItem = Material.valueOf(AdvancedFurnace.smelt.map.get(item) );
-                ItemStack newStack = new ItemStack(newItem, amount);
-                player.getInventory().setItemInMainHand(newStack);
-                successfulSmelt = successfulSmelt.replace("%OLDITEM%", item.name());
-                successfulSmelt = successfulSmelt.replace("%NEWITEM%", newItem.name());
-                player.sendMessage(prefix + successfulSmelt);
-                player.playNote(player.getLocation(), Instrument.CHIME, Note.natural(1, Note.Tone.A));
-                player.sendTitle(MainName, successfulSmelt);
-
+            for (String key : Keys) {
+                ConfigurationSection currentSection = sec.getConfigurationSection(key);
+                if(currentSection.getString("from").equalsIgnoreCase(String.valueOf(item)) ){
+                    newItem = Material.valueOf(currentSection.getString("to") );
+                    ItemStack newStack = new ItemStack(newItem, amount);
+                    player.getInventory().setItemInMainHand(newStack);
+                    successfulSmelt = successfulSmelt.replace("%OLDITEM%", item.name());
+                    successfulSmelt = successfulSmelt.replace("%NEWITEM%", newItem.name());
+                    player.sendMessage(prefix + successfulSmelt);
+                    player.playNote(player.getLocation(), Instrument.CHIME, Note.natural(1, Note.Tone.A));
+                    player.sendTitle(MainName, successfulSmelt);
+                    return true;
+                }
             }
-            else {
+
                 player.sendMessage(prefix + unsmeltableItem);
                 player.playSound(player.getLocation(), Sound.BLOCK_ANVIL_DESTROY, 0.1F, 1);
                 player.sendTitle(MainName, unsmeltableItem);
                 return false;
-            }
 
 
 

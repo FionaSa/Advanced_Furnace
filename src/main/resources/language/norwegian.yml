@@ -1,6 +1,8 @@
 NoPermission: "&cUtilstrekkelig tillatelse."
 UnsmeltableItem: "&bBruk et gyldig element til å smelte."
 SuccessfulSmelt: "&bSmeltet vare (r) fra hånden din."
+SuccessfulSmeltAll: "&b{N} objekt(er) ble tilberedt."
+UnsmeltableItemAll: "&bVennligst bruk smeltbare gjenstander."
 Reload: "&bKonfigurasjonen ble lastet på nytt."
 Prefix: "&8&l[&b&lAdvanced&f&lFurnace&8&l] &8>> &r"
 Help: "&b&m-----&r&f&m-----&r&8[&b&lAdvanced&f&lFurnace&8]&f&m-----&r&b&m-----&r"
