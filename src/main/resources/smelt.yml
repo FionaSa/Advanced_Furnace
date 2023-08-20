@@ -362,4 +362,7 @@ smeltable:
   '121':
     from: CHICKEN
     to: COOKED_CHICKEN
+  '122':
+    from: DEEPSLATE_BRICK
+    to: CRACKED_DEEPSLATE_BRICK
 
